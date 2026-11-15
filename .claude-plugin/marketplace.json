@@ -1,0 +1,22 @@
+{
+  "name": "dotcomjack",
+  "owner": {
+    "name": "DotcomJack",
+    "url": "https://dotcomjack.com"
+  },
+  "metadata": {
+    "description": "The verification rules one founder runs a few dozen products on, as Claude Code skills. Each rule names the failure that produced it.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "dotcomjack-rules",
+      "source": "./",
+      "description": "prove-it and tests-ran: no claim of done without an artifact, and zero tests run is a failure.",
+      "skills": [
+        "./skills/prove-it",
+        "./skills/tests-ran"
+      ]
+    }
+  ]
+}
